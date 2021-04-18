@@ -1,0 +1,27 @@
+#info{
+    background: rgb(211, 211, 211);
+    margin-top: 45px;
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    padding: 20px
+    
+}
+
+#info .contenedor img{
+    width: 180px;
+    height: 250px;
+    border-radius: 100px;
+    border: solid 1px rgba(83, 83, 83, 0.589);
+    padding: 20px;
+}
+
+#info .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#info .contenedor article{
+    margin: 20px;
+}

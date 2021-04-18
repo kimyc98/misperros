@@ -1,0 +1,81 @@
+
+header label{
+    float: right;
+    font-size: 29px;
+    /* 6px a los lados - 0 arriba y abajo */
+    margin: 6px 0px;
+    /* al poner al cursor que aparezca la manito */
+    cursor: pointer;
+}
+
+/* necesitamos el menu como disp movil */
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+   
+    width: 100%;
+    /* 100% de lapagina */
+    height: 100vh;
+    background: rgb(51,51,51,0.9);  
+    /* para desaparecerlo */
+    transform: translateX(-100%);
+    transition: 1s;
+
+}
+
+.menu a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    /* al desplegarse como bloque cada uno ocupa su tamaño en una linea */
+    height: 30px;
+    padding: 10px;
+    border-bottom: solid 1px rgb(255,255,255,0.3);
+}
+
+.menu a:hover{
+    background: rgb(255,255,255,0.3);
+    transition: 0.4s;
+}
+
+
+
+/* con el # tomamos el objeto que tiene el id-menubar */
+/* cuando le ponemos el check se va a derivar la accion al menu */
+#menu-bar:checked~.menu{
+    /* vuelve a posicion inicial */
+transform: translateX(0); 
+}
+
+#menu-bar{
+    /* no queremos verlo y lo ocultamos */
+    display: none;
+}
+
+
+/* dispositivo por el cual se esta viendo la pagina */
+@media (min-width:1024px){
+
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        float: right;
+        display: flex;
+        /* trasladar el navegador a la esquina superior */
+        transform: translateX(0%);
+        transition: 1s;
+       
+    }
+
+    header label{
+        display: none;
+    }
+
+    .menu a{
+        border-bottom: none;
+    } 
+
+    
+}

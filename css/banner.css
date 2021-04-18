@@ -1,0 +1,46 @@
+/* me permitira poner al perrito detras y poner texto encima */
+
+
+
+#banner{
+    padding-top: 52px;
+}
+
+#banner img{
+    width: 100%;
+
+}
+ 
+#banner .contenedor{
+    position: absolute; 
+    top: 10%;
+    /* 10% del contenedor */
+    left: 6%;
+    width: 50%;
+    color: rgb(5, 78, 66);
+    font-family: cursive;
+    
+}
+
+#banner .contenedor h2{
+    font-size: 29px;
+}
+
+#banner .contenedor a{
+    text-decoration: none;
+   
+    padding: 5px;
+    display: block;
+    margin-top: 20px;
+    padding: 5px;
+    width: 65px; 
+    background: rgba(9, 116, 98, 0.486);
+    border-radius: 7px;
+    color: white;
+}
+
+
+#banner .contenedor a:hover{
+    background: rgba(247, 120, 89, 0.596);
+    color: black;
+}

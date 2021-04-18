@@ -1,0 +1,36 @@
+
+#blog{
+    font-family: cursive;
+    text-align: center;
+
+}
+
+
+#blog .contenedor img{
+
+width: 180px;
+height: 250px;
+border: solid 2px rgba(3, 1, 1, 0.315);
+border-radius: 7px;
+
+
+}
+
+#blog .contenedor{
+    /* flex significa pegado al otro en carril */
+    display: flex;
+    justify-content: center;
+   
+    /* se adapten si no alcanzan todas en el tamaño */
+    flex-wrap: wrap;
+
+}
+
+#blog .contenedor article{
+    margin: 40px;
+}
+
+#blog .contenedor img:hover{
+    filter: opacity(0.5);
+    cursor: pointer;
+}

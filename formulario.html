@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perris</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+
+    <!--CABECERA-->
+
+    <header>
+        <div class="contenedor">
+
+            <h1 class="icon-guidedog">Mis Perris</h1>
+
+
+            <!--boton para abrir categorias-->
+            <input type="checkbox" name="" id="menu-bar">
+            <!--etiqueta que trae el icono-->
+            <label class="icon-th-list" for="menu-bar"></label>
+
+            <nav class="menu">
+
+                <!--navegador-->
+
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="">Formulario</a>
+                <a href="">Quienes somos</a>
+
+
+
+
+
+            </nav>
+
+
+
+            <!--Contenido-->
+    </header>
+
+    <main>
+
+        <section id="banner">
+            <img src="img/bannerp.png" alt="">
+            <div class="contenedor">
+                <h2>Mascotas felices </h2>
+                <p>cual es la mj mascota para ud</p>
+                <a href="">leer mas</a>
+            </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="bienvenida">
+            <h2>Formulario de inscripcion para adopatar</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rerum aliquam quos rem repellendus
+                vitae doloribus qui amet explicabo optio, excepturi, adipisci laudantium placeat repellat. Deleniti
+                mollitia assumenda ipsam hic?</p>
+
+
+
+
+
+        </section>
+        <!--seccion formulario-->
+        <section id="formulario">
+
+            <form class="form-registro" action="" method="post">
+
+
+                <h2 class="form-titulo">Creacion cuenta de usuario</h2>
+               
+               <div class="contenedor-input">
+               
+                <!--cajatipo texto--> <!--placeholder es el texto en agua-->
+                <input class="col-sm" type="text" name="txtNombre" id=""  placeholder="ingrese Nombre">
+                <input class="col-sm" type="text" name="txtpellido" id="" placeholder="ingrese apellido">
+                <input class="col-xl" type="email" name="txtEmail" id="" placeholder="ingrese email ">
+                <input class="col-sm" type="text" name="txtUsuario" id="" placeholder="ingrese usuario">
+                <input class="col-sm" type="password" name="txtPass" id="" placeholder="ingrese contraseña">
+                <input  class="col-xl"type="text" name="txtFono" id="" placeholder="ingrese fono">
+
+                <!--tomar todos los datos y los envia a la pagina web del formulario -->
+                <input class="btn-registro" type="submit" value="Registrar">
+                
+                <!-- usar como js escribimos antes del body y agregamos el onclick para conectarlo con el mensaje-->
+                <input class="btn-registro" type="button" value="Accion" onclick="mensaje()">
+
+
+            </div>
+
+
+            </form>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <!--footerr-->
+    <footer>
+
+        <div class="contenedor">
+            <p>Mis Perris- desarrollo web</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+<script>
+    // tenemos que conectarlo con el boton accion 
+    // para eso ponemos un on en el input del boton accion
+function mensaje() {
+    alert('hola mundo');
+    
+}
+</script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+
+
+</body>
+
+</html>
