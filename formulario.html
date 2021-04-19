@@ -80,25 +80,32 @@
 
 
                 <h2 class="form-titulo">Creacion cuenta de usuario</h2>
-               
-               <div class="contenedor-input">
-               
-                <!--cajatipo texto--> <!--placeholder es el texto en agua-->
-                <input class="col-sm" type="text" name="txtNombre" id=""  placeholder="ingrese Nombre">
-                <input class="col-sm" type="text" name="txtpellido" id="" placeholder="ingrese apellido">
-                <input class="col-xl" type="email" name="txtEmail" id="" placeholder="ingrese email ">
-                <input class="col-sm" type="text" name="txtUsuario" id="" placeholder="ingrese usuario">
-                <input class="col-sm" type="password" name="txtPass" id="" placeholder="ingrese contraseña">
-                <input  class="col-xl"type="text" name="txtFono" id="" placeholder="ingrese fono">
 
-                <!--tomar todos los datos y los envia a la pagina web del formulario -->
-                <input class="btn-registro" type="submit" value="Registrar">
-                
-                <!-- usar como js escribimos antes del body y agregamos el onclick para conectarlo con el mensaje-->
-                <input class="btn-registro" type="button" value="Accion" onclick="mensaje()">
+                <div class="contenedor-input">
+
+                    <!--cajatipo texto-->
+                    <!--placeholder es el texto en agua, para poder dar funcion se toma el id-->
+                    <input class="col-sm" type="text" name="txtRut" id="txtRut" placeholder="ingrese Rut">
+                    <input class="col-sm" type="text" name="txtNombreCompleto" id=""
+                        placeholder="ingrese nombre y apellido">
+
+                    <input class="col-sm" type="date" name="txtFechaNaci" id="txtFechaNaci">
+
+                    <input class="col-sm" type="email" name="txtEmail" id="" placeholder="ingrese email ">
+
+                    <input class="col-sm" type="text" name="txtUsuario" id="" placeholder="ingrese usuario">
+                    <input class="col-sm" type="password" name="txtPass" id="" placeholder="ingrese contraseña">
+                    <input class="col-xl" type="text" name="txtFono" id="" placeholder="ingrese fono">
+
+                    <!--tomar todos los datos y los envia a la pagina web del formulario -->
+                    <input class="btn-registro" type="submit" value="Registrar">
+
+                    <!-- usar como js escribimos antes del body y agregamos el onclick para conectarlo con el mensaje-->
+                    <!--para validar algunos datos-->
+                    <input class="btn-registro" type="button" value="Validacion" onclick="validarFormulario()">
 
 
-            </div>
+                </div>
 
 
             </form>
@@ -127,14 +134,12 @@
     </div>
 
 
-<script>
-    // tenemos que conectarlo con el boton accion 
-    // para eso ponemos un on en el input del boton accion
-function mensaje() {
-    alert('hola mundo');
-    
-}
-</script>
+
+    <!-- tenemos que conectarlo con el boton accion 
+     para eso ponemos un on en el input del boton accion-->
+    <!--todo lo que ponemos en este enlace se podra ocupar -->
+    <script src="js/scripts.js"></script>
+
     <script src="dist/js/lightbox-plus-jquery.js"></script>
 
 
